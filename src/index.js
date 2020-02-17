@@ -1,10 +1,10 @@
 
 document.addEventListener("DOMContentLoaded", () => {
 const createTaskForm = document.getElementById("create-task-form");
-const deleteTasks = document.getElementById("delete-task-form");
+// const deleteTasks = document.getElementById("delete-task-form");
 
 createTaskForm.addEventListener("submit", createNewTask);
-deleteTasks.addEventListener("submit", deleteAllTasks);
+// deleteTasks.addEventListener("submit", deleteAllTasks);
 });
 
 const createNewTask = event => {
@@ -22,9 +22,9 @@ const appendNewTask = task => {
 document.getElementById("tasks").appendChild(task);
 };
 
-const deleteAllTasks = event => {
-event.preventDefault();
-const findTasks = document.getElementById("tasks");
-console.log(findTasks);
-findTasks.innerText = "";
-};
+// const deleteAllTasks = event => {
+// event.preventDefault();
+// const findTasks = document.getElementById("tasks");
+// console.log(findTasks);
+// findTasks.innerText = "";
+// };
